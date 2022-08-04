@@ -2,6 +2,7 @@ package com.example.comp1786lecture1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.widget.TextView;
 
@@ -24,13 +25,15 @@ public class MainActivity extends AppCompatActivity {
         mark++;
 
         // Append the random number to the current text
-
+        helloWorld.setTextSize(20);
         helloWorld.setText("Hello world");
         helloWorld.append("\nYour mark is " + mark);
         if (mark > 50){
+            helloWorld.setTextColor(Color.BLUE);
             helloWorld.append("\nYou are the winner");
         }
         else {
+            helloWorld.setTextColor(Color.RED);
             helloWorld.append("\nYou are the loser");
         }
 
